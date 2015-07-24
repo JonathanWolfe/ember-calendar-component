@@ -1,0 +1,26 @@
+<div class="calendar">
+	<div class="flex-row cal-title">
+		<div class="cal-prev-month" {{action showPrevMonth}}>&lsaquo;</div>
+		<div class="cal-month">{{calMonthName}}</div>
+		<div class="cal-next-month" {{action showNextMonth}}>&rsaquo;</div>
+	</div>
+	<div class="flex-row cal-labels">
+		<div class="cal-label">SUN</div>
+		<div class="cal-label">MON</div>
+		<div class="cal-label">TUE</div>
+		<div class="cal-label">WED</div>
+		<div class="cal-label">THU</div>
+		<div class="cal-label">FRI</div>
+		<div class="cal-label">SAT</div>
+	</div>
+
+	{{#each week in calWeeks}}
+		<div class="flex-row cal-week">
+			{{#each day in week}}
+				<div {{bind-attr class=":cal-day day.event:cal-day-active day.today:cal-day-current day.currMonth:cal-day-reg:cal-day-dark" }}>
+					{{day.value}}
+				</div>
+			{{/each}}
+		</div>
+	{{/each}}
+</div>
