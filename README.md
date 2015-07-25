@@ -4,7 +4,7 @@ A simple calendar component for Ember that show a month view with a highlight fo
 ![Screenshot](https://raw.github.com/JonathanWolfe/ember-calendar-component/master/screenshot.jpg)
 
 ## Usage
-1. Copy the `x-calendar.hbs` and `x-calendar.js` into the respective `comonent` directories.
+1. Copy the `x-calendar.hbs` and `x-calendar.js` into the respective `component` directories.
 2. Load in the `x-calendar.css` or `.scss`	varient if you're using Sass.
 3. Use `{{x-calendar}}` in your templates to display the calendar.
 
