@@ -224,7 +224,7 @@ window.FW.Application.XCalendarComponent = window.Ember.Component.extend( {
 
 		var newDay;
 
-		while ( calPadding > 0 ) {
+		while ( calPadding >= 0 ) {
 			newDay = this.dayObj();
 			newDay.value = prevMonthDays.pop();
 			newDay.date = new Date( prevMonthYear, prevMonthNumber, newDay.value ).toISOString();
